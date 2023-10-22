@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #ccffcc;
+    font-family: Roboto;
+    color: #003333;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App {
+    width: 65%;
+    height: 80%;
+}
+
+.upper-menu>.timer-btn-container {
+    margin-block: 30px;
+    gap: 0.7rem;
+    width: 70px;
+}
+
+.upper-menu>.timer-btn-container>div {
+    cursor: pointer;
+}
+
+.typing-box>.hidden-input {
+    opacity: 0;
+}
+
+.typing-box>.words {
+    text-align: left;
+    width: 90%;
+    height: 46vh;
+}
+
+.typing-box>.words>span>span  {
+    word-spacing: 20px;
+}
+
+.typing-box>.words>span>span>span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #5c5151;
+}
+
+.footer>.size-btn-container>button {
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    margin-inline: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Roboto
+Light 300
+Regular 400
+Medium 500 */
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
