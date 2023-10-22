@@ -13,7 +13,7 @@ export const App = () => {
     return (
         <div className='App'>
             <Header />
-            <UpperMenu paraSize={paraSize}/>
+            <UpperMenu paraSize={paraSize} />
             <TypingBox paraSize={paraSize} />
             <Footer setParaSize={setParaSize} />
         </div>

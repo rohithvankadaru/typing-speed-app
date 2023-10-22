@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = ({setParaSize}) => {
+const Footer = ({ setParaSize }) => {
 
 
     function sizeHandler(event) {

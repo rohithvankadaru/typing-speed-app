@@ -31,6 +31,10 @@
     cursor: pointer;
 }
 
+.upper-menu>.timer-btn-container>div:active {
+    transform: translate(1px, 1px);
+}
+
 .typing-box>.hidden-input {
     opacity: 0;
 }
@@ -66,6 +70,9 @@
     cursor: pointer;
 }
 
+.footer>.size-btn-container>button:hover {
+    background-color: rgba(0, 0, 0, 85%);
+}
 
 /* Roboto
 Light 300
