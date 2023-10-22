@@ -38,18 +38,22 @@
 .typing-box>.words {
     text-align: left;
     width: 90%;
-    height: 46vh;
+    height: 50vh;
 }
 
-.typing-box>.words>span>span  {
+.typing-box>.words>span {
     word-spacing: 20px;
 }
 
-.typing-box>.words>span>span>span {
+.typing-box>.words>span>.word>.letter {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
     font-size: 24px;
     color: #5c5151;
+}
+
+.footer>.size-btn-container {
+    margin-block: 20px;
 }
 
 .footer>.size-btn-container>button {
