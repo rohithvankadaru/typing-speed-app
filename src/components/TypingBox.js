@@ -17,12 +17,7 @@ const TypingBox = ({ paraSize }) => {
             <code className="words">
                 {
                     paraSizeHandler(paraSize).map(element =>
-                        <span>
-                            <span className="word">
-                                {element.split('').map(char => <span className="letter">{char}</span>)}
-                            </span>
-                            <span> </span>
-                        </span>
+                        <span className="word">{element.split('').map(char => <span className="letter">{char}</span>)} </span>
                     )
                 }
             </code>

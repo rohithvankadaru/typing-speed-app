@@ -41,11 +41,11 @@
     height: 50vh;
 }
 
-.typing-box>.words>span {
+.typing-box>.words>.word {
     word-spacing: 20px;
 }
 
-.typing-box>.words>span>.word>.letter {
+.typing-box>.words>.word>.letter {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
     font-size: 24px;
