@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header';
 import TypingBox from './components/TypingBox';
-import Footer from './components/Footer';
+import Center from './components/Center';
 import { UpperMenu } from './components/UpperMenu';
-import './App.css';
-import './Util.css';
+import './styles/App.css';
+import './styles/Util.css';
 
 export const App = () => {
 
@@ -15,7 +15,7 @@ export const App = () => {
             <Header />
             <UpperMenu paraSize={paraSize} />
             <TypingBox paraSize={paraSize} />
-            <Footer setParaSize={setParaSize} />
+            <Center setParaSize={setParaSize} />
         </div>
     )
 }

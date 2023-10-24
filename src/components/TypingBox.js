@@ -14,10 +14,10 @@ const TypingBox = ({ paraSize }) => {
 
     return (
         <div className="typing-box text-center flex flex-col align-center">
-            <code className="words">
+            <code className="words flex flex-wrap">
                 {
                     paraSizeHandler(paraSize).map(element =>
-                        <span className="word">{element.split('').map(char => <span className="letter">{char}</span>)} </span>
+                        <span className="word">{element.split('').map(char => <span className="letter">{char}</span>)}</span>
                     )
                 }
             </code>

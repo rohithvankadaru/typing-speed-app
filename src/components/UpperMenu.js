@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export const UpperMenu = ({ paraSize }) => {
 
-    const[timer, setTimer] = useState(15);
+    const [timer, setTimer] = useState(15);
 
     function updateTimerFn(event) {
         setTimer(event.target.innerText.substring(0, 2));
