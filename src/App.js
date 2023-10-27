@@ -5,18 +5,18 @@ import Center from './components/Center';
 import { UpperMenu } from './components/UpperMenu';
 import './styles/App.css';
 import './styles/Util.css';
+import { randomWords } from './components/randomWords';
 
 export const App = () => {
 
-    const [paraSize, setParaSize] = useState(50);
-    const [forcedRender, setForcedRender] = useState(Math.random());
+    const [wordsArray, setWordsArray] = useState(randomWords());
 
     return (
         <div className='App'>
             <Header />
-            <UpperMenu paraSize={paraSize} />
-            <TypingBox paraSize={paraSize} />
-            <Center setParaSize={setParaSize} setForcedRender={setForcedRender} oldParaSize={paraSize} />
+            <UpperMenu paraSize={wordsArray.length} />
+            <TypingBox wordsArray={wordsArray} />
+            <Center setWordsArray={setWordsArray} />
         </div>
     )
 }

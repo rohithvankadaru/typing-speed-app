@@ -1,10 +1,10 @@
+import { randomWords } from "./randomWords";
 
-const Center = ({ oldParaSize, setParaSize, setForcedRender }) => {
+const Center = ({ setWordsArray }) => {
 
 
     function sizeHandler(event) {
-        if (oldParaSize === event.target.innerText) setForcedRender(Math.random());
-        else setParaSize(event.target.innerText);
+        setWordsArray(randomWords(event.target.innerText));
     }
 
     return <div className="center text-center">

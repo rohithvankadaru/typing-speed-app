@@ -1,4 +1,4 @@
-export const Data = [
+const Data = [
     "typing", "apps", "cater", "all", "levels", "from", "beginners", "experts", "they", "provide",
     "structured", "way",
     "improve",
@@ -22,3 +22,12 @@ export const Data = [
     "exercises", "consistency", "and", "is", "the", "key", "becoming", "benefit", "everyone", "apps",
     "proficient", "structured", "fun", "practice", "typist"
 ];
+
+export const randomWords = (size = 50) => {
+    let ansArray = [];
+    for (let i = 0; i < size; i++) {
+        let index = Math.floor(Math.random() * Data.length);
+        ansArray.push(Data[index]);
+    }
+    return ansArray;
+}
