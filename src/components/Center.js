@@ -1,11 +1,10 @@
-import React from 'react';
 
 const Center = ({ oldParaSize, setParaSize, setForcedRender }) => {
 
 
     function sizeHandler(event) {
-        setParaSize(event.target.innerText);
-        if (oldParaSize == event.target.innerText) setForcedRender(Math.random());
+        if (oldParaSize === event.target.innerText) setForcedRender(Math.random());
+        else setParaSize(event.target.innerText);
     }
 
     return <div className="center text-center">
